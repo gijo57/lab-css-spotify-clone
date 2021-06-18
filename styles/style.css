@@ -13,17 +13,25 @@ White: #FFF
   font-family: sans-serif;
 }
 
-header {
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
 }
 
 nav {
-  padding: 1em 2em;
+  padding: 1.2em 2.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav > ul {
+  font-weight: 300;
   font-size: 1.5em;
   list-style: none;
   width: 30%;
@@ -37,6 +45,7 @@ nav > img {
 }
 
 #hero-section {
+  padding-bottom: 10em;
   color: white;
   height: 50em;
   display: flex;
@@ -47,20 +56,39 @@ nav > img {
   align-items: center;
 }
 
+#hero-section p {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
 h1 {
   font-size: 6em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 #content {
-  height: 35em;
+  height: 37em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5.5em;
+}
+
+#content h3 {
+  font-size: 1.8em;
+  margin: 1em 0;
+  color: #00b172;
+}
+
+#content p {
+  text-align: center;
+  font-size: 1.5em;
+  width: 11em;
 }
 
 #content img {
@@ -70,37 +98,75 @@ h2 {
 #content > h2 {
   color: #1a1a1a;
   border-bottom: 0.1em solid #00b172;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.2em;
+  margin-top: 1em;
 }
 
 #content > div {
+  padding: 0 4em;
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #content > div > div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 33%;
-  height: 20em;
+  height: 25em;
 }
 
 #features {
   display: flex;
+  justify-content: space-between;
   color: white;
   margin: 2em;
+  padding: 7em;
   height: 50em;
   background-color: #00b172;
 }
 
+#features h2 {
+  border-bottom: 0.1em solid white;
+  padding-bottom: 0.2em;
+}
+
+#features h3 {
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#features p {
+  font-size: 1.2em;
+}
+
+#features > div {
+  display: flex;
+  flex-direction: column;
+}
+
 #features > div > div {
+  width: 20em;
+}
+
+#features img {
+  display: block;
 }
 
 #features > img:nth-child(2) {
-  width: 10em;
-  height: 10em;
+  margin: auto 0;
+  margin-right: 10em;
+  width: 8em;
+  height: 8em;
 }
 
 #features > img:last-child {
+  margin-top: 2em;
   width: 20em;
   height: 35em;
 }
